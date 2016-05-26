@@ -16,12 +16,12 @@ public class Room {
 	/**
 	 * Description of the property id_room.
 	 */
-	private Integer id_room;
+	private int id_room;
 
 	/**
 	 * Description of the property max_student_number.
 	 */
-	private Integer max_student_number;
+	private int max_student_number;
 
 	// Start of user code (user defined attributes for Room)
 
@@ -30,10 +30,10 @@ public class Room {
 	/**
 	 * The constructor.
 	 */
-	public Room() {
-		// Start of user code constructor for Room)
-		super();
-		// End of user code
+	public Room(int room_number,int student_max_number) {
+		this.id_room=room_number;
+		this.max_student_number=student_max_number;
+		
 	}
 
 	// Start of user code (user defined methods for Room)
@@ -43,7 +43,7 @@ public class Room {
 	 * Returns id_room.
 	 * @return id_room 
 	 */
-	public Integer getId_room() {
+	public int getId_room() {
 		return this.id_room;
 	}
 
@@ -51,7 +51,7 @@ public class Room {
 	 * Sets a value to attribute id_room. 
 	 * @param newId_room 
 	 */
-	public void setId_room(Integer newId_room) {
+	public void setId_room(int newId_room) {
 		this.id_room = newId_room;
 	}
 
@@ -59,7 +59,7 @@ public class Room {
 	 * Returns max_student_number.
 	 * @return max_student_number 
 	 */
-	public Integer getMax_student_number() {
+	public int getMax_student_number() {
 		return this.max_student_number;
 	}
 
@@ -67,7 +67,7 @@ public class Room {
 	 * Sets a value to attribute max_student_number. 
 	 * @param newMax_student_number 
 	 */
-	public void setMax_student_number(Integer newMax_student_number) {
+	public void setMax_student_number(int newMax_student_number) {
 		this.max_student_number = newMax_student_number;
 	}
 
