@@ -14,7 +14,7 @@ import java.util.HashSet;
  * 
  * @author aguler
  */
-public abstract class turntable {
+public abstract class Timetable {
 	/**
 	 * Description of the property id_turntable.
 	 */
@@ -32,7 +32,7 @@ public abstract class turntable {
 	/**
 	 * The constructor.
 	 */
-	public turntable() {
+	public Timetable() {
 		// Start of user code constructor for turntable (abstract))
 		super();
 		// End of user code

@@ -14,7 +14,7 @@ import java.util.HashSet;
  * 
  * @author aguler
  */
-public class TimetableStudent extends turntable {
+public class TimetableStudent extends Timetable {
 	/**
 	 * Description of the property id_turntable.
 	 */
