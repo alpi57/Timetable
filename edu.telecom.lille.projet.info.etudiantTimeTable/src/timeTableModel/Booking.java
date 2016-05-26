@@ -39,7 +39,7 @@ public class Booking {
 	/**
 	 * Description of the property id_room.
 	 */
-	private Integer id_room;
+	private int id_room;
 
 	// Start of user code (user defined attributes for Booking)
 
@@ -48,10 +48,12 @@ public class Booking {
 	/**
 	 * The constructor.
 	 */
-	public Booking() {
-		// Start of user code constructor for Booking)
-		super();
-		// End of user code
+	public Booking(int last_reservation_id, int the_login_teacher,Date new_start_date,Date new_end_date, int the_room_id) {
+		this.id_reservation=last_reservation_id + 1;
+		this.login_teacher=the_login_teacher;
+		this.start_date=new_start_date;
+		this.end_date=new_end_date;
+		this.id_room=the_room_id;
 	}
 
 	/**
