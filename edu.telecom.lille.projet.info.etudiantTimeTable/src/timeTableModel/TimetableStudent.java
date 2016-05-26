@@ -32,7 +32,7 @@ public class TimetableStudent extends turntable {
 	/**
 	 * The constructor.
 	 */
-	public TurntableStudent() {
+	public TimetableStudent() {
 		// Start of user code constructor for TurntableStudent)
 		super();
 		// End of user code
