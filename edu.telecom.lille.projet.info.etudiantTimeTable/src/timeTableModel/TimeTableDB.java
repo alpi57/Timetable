@@ -22,9 +22,9 @@ public class TimeTableDB {
 	 * 
 	 */
 	private String file;
-	private HashSet<TimetableTeacher> timetableT;
-	private HashSet<TimetableStudent> timetableS;
-	private HashSet<Room> rooms;
+	public HashSet<TimetableTeacher> timetableT;
+	public HashSet<TimetableStudent> timetableS;
+	public HashSet<Room> rooms;
 	/**
 	 * 
 	 * Constructeur de TimeTableDB. 
