@@ -6,6 +6,8 @@ import java.util.Hashtable;
 
 import timeTableModel.TimeTableDB;
 import timeTableModel.Room;
+import timeTableModel.TimetableStudent;
+import timeTableModel.TimetableTeacher;
 /**
  * Cette classe est le contrôleur d'emplois du temps que vous devez implémenter. 
  * Elle contient un attribut correspondant à la base de données d'emplois du temps que vous allez créer.
@@ -68,16 +70,17 @@ public class TimeTableController implements ITimeTableController{
 
 	@Override
 	public boolean addRoom(int roomId, int capacity) {
-		// TODO Auto-generated method stub
 		Room newRoom=new Room(roomId,capacity);
 		tTDB.rooms.add(newRoom);
 		
 		if(tTDB.rooms.contains(newRoom)){
 			return true;
 		}
+		
 		return false;
 	}
 
+	
 	@Override
 	public boolean removeRoom(int roomId) {
 		// TODO Auto-generated method stub
@@ -92,7 +95,12 @@ public class TimeTableController implements ITimeTableController{
 
 	@Override
 	public boolean addTimeTable(int timeTableId) {
-		// TODO Auto-generated method stub
+		TimetableStudent newtimeTable=new TimetableStudent(timeTableId);
+		tTDB.timetableS.add(newtimeTable);
+		
+		if(tTDB.timetableS.contains(newtimeTable)){
+			return true;
+		}	
 		return false;
 	}
 
