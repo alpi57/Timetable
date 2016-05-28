@@ -1,4 +1,7 @@
 package timeTableModel;
+
+import java.util.HashSet;
+
 /**
  * 
  * Cette classe gére la base de données d'emplois du temps. Elle doit permettre de sauvegarder et charger les emplois du temps ainsi que les salles à partir d'un fichier XML. 
@@ -19,6 +22,9 @@ public class TimeTableDB {
 	 * 
 	 */
 	private String file;
+	private HashSet<TimetableTeacher> timetableT;
+	private HashSet<TimetableStudent> timetableS;
+	private HashSet<Room> rooms;
 	/**
 	 * 
 	 * Constructeur de TimeTableDB. 
@@ -27,9 +33,11 @@ public class TimeTableDB {
 	 * 		Le nom du fichier qui contient la base de données.
 	 */
 	public TimeTableDB(String file){
-		//TODO	À modifier
-		super();
+		//TODO	
 		this.setFile(file);
+		this.timetableS=new HashSet<TimetableStudent>();
+		this.timetableT=new HashSet<TimetableTeacher>();
+		this.rooms=new HashSet<Room>();
 	}
 	/**
 	 * Getter de file
@@ -49,4 +57,6 @@ public class TimeTableDB {
 	public void setFile(String file) {
 		this.file = file;
 	}
+
+	
 }
