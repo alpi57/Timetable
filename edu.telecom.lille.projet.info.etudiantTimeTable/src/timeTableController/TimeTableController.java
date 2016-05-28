@@ -1,9 +1,11 @@
 package timeTableController;
 
 import java.util.Date;
+
 import java.util.Hashtable;
 
 import timeTableModel.TimeTableDB;
+import timeTableModel.Room;
 /**
  * Cette classe est le contrôleur d'emplois du temps que vous devez implémenter. 
  * Elle contient un attribut correspondant à la base de données d'emplois du temps que vous allez créer.
@@ -67,6 +69,12 @@ public class TimeTableController implements ITimeTableController{
 	@Override
 	public boolean addRoom(int roomId, int capacity) {
 		// TODO Auto-generated method stub
+		Room newRoom=new Room(roomId,capacity);
+		tTDB.rooms.add(newRoom);
+		
+		if(tTDB.rooms.contains(newRoom)){
+			return true;
+		}
 		return false;
 	}
 
@@ -129,6 +137,7 @@ public class TimeTableController implements ITimeTableController{
 		// TODO Auto-generated method stub
 		return false;
 	}
+	
 	
 	
 
