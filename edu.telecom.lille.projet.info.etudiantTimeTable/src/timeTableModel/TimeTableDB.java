@@ -1,6 +1,6 @@
 package timeTableModel;
 
-import java.util.HashSet;
+import java.util.HashMap;
 
 /**
  * 
@@ -22,9 +22,9 @@ public class TimeTableDB {
 	 * 
 	 */
 	private String file;
-	public HashSet<TimetableTeacher> timetableT;
-	public HashSet<TimetableStudent> timetableS;
-	public HashSet<Room> rooms;
+	public HashMap<Integer,TimetableTeacher> timetableT;
+	public HashMap<Integer,TimetableStudent> timetableS;
+	public HashMap<Integer,Room> rooms;
 	/**
 	 * 
 	 * Constructeur de TimeTableDB. 
@@ -35,9 +35,9 @@ public class TimeTableDB {
 	public TimeTableDB(String file){
 		//TODO	
 		this.setFile(file);
-		this.timetableS=new HashSet<TimetableStudent>();
-		this.timetableT=new HashSet<TimetableTeacher>();
-		this.rooms=new HashSet<Room>();
+		this.timetableS=new HashMap<Integer,TimetableStudent>();
+		this.timetableT=new HashMap<Integer,TimetableTeacher>();
+		this.rooms=new HashMap<Integer,Room>();
 	}
 	/**
 	 * Getter de file
